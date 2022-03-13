@@ -32,7 +32,7 @@ func ContentAwareResize(url string) ([]byte, error) {
 	}
 	err = p.Process(response.Body, converted)
 	if err != nil {
-		return nil, errors.Wrap(err, "Failed to apply seam carving to the image!")
+		return nil, errors.Wrap(err, "Failed to apply seam carving to the image!!")
 	}
 	fmt.Printf("Seam carving completed for %s\n", url)
 	return converted.Bytes(), nil
